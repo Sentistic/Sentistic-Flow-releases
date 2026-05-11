@@ -1,0 +1,47 @@
+name: Bug report
+description: Report a problem with a Sentistic Flow release build
+labels: ["bug"]
+body:
+  - type: input
+    id: version
+    attributes:
+      label: App version
+      description: From Help → About (e.g. 0.9.0)
+      placeholder: "0.9.0"
+    validations:
+      required: true
+  - type: dropdown
+    id: os
+    attributes:
+      label: Operating system
+      options:
+        - Windows 10
+        - Windows 11
+        - macOS 12 (Monterey)
+        - macOS 13 (Ventura)
+        - macOS 14 (Sonoma)
+        - macOS 15 (Sequoia)
+        - Linux (Ubuntu 22.04+)
+        - Linux (other)
+    validations:
+      required: true
+  - type: textarea
+    id: what-happened
+    attributes:
+      label: What happened?
+      description: What did you do, what did you expect, and what actually happened?
+    validations:
+      required: true
+  - type: textarea
+    id: logs
+    attributes:
+      label: Log file
+      description: |
+        Attach `sentistic-flow.log` from the app folder if possible.
+        Drag the file into this box or paste relevant excerpts.
+      render: shell
+  - type: input
+    id: sensor-fw
+    attributes:
+      label: Sensor firmware version (if relevant)
+      placeholder: "e.g. v2.3.1"

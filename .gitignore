@@ -1,0 +1,21 @@
+# OS detritus
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Editors
+.vscode/
+.idea/
+*.swp
+*~
+
+# Local artefacts (releases live in GitHub Releases, not in git)
+dist/
+build/
+*.exe
+*.dmg
+*.AppImage
+*.zip
+*.msi
+SHA256SUMS.txt
+version.json

@@ -1,0 +1,41 @@
+Sentistic Flow — End User License (Beta)
+Copyright (c) 2026 Sentistic
+
+All rights reserved.
+
+This software is provided in pre-release ("beta") form for evaluation
+and demonstration purposes. By downloading, installing, or using the
+software you agree to the following terms:
+
+1. License grant. Sentistic grants you a non-exclusive, non-transferable,
+   revocable license to install and use the software on devices you own
+   or control, solely for evaluation and use with Sentistic OMNI sensor
+   hardware.
+
+2. Restrictions. You may not (a) redistribute, sublicense, sell, lease
+   or rent the software; (b) reverse engineer, decompile or disassemble
+   the software except to the extent permitted by applicable law;
+   (c) remove or alter any proprietary notices.
+
+3. Updates. Sentistic may, at its discretion, publish updates,
+   bug-fixes or new releases through this repository. The in-app
+   updater notifies you when new builds are available; you choose
+   whether to install them.
+
+4. No warranty. The software is provided "AS IS", without warranty of
+   any kind, express or implied, including but not limited to the
+   warranties of merchantability, fitness for a particular purpose, and
+   noninfringement. To the maximum extent permitted by law, in no event
+   shall Sentistic be liable for any claim, damages, or other
+   liability arising from, out of, or in connection with the software
+   or the use or other dealings in the software.
+
+5. Termination. This license terminates automatically if you breach
+   any of its terms. On termination you must uninstall the software.
+
+6. Third-party components. The software bundles open-source components
+   distributed under their own licenses. A summary is available on
+   request.
+
+For commercial licensing or production deployments, contact
+licensing@sentistic.com.

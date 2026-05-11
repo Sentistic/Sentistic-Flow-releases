@@ -1,0 +1,11 @@
+{
+  "$schema-comment": "Reference layout of the version.json document published by the release workflow. Do not hand-edit; the workflow regenerates this on every tag.",
+  "version": "0.0.0-placeholder",
+  "released_at": "1970-01-01T00:00:00Z",
+  "release_notes_url": "https://github.com/OWNER/REPO/releases/tag/v0.0.0",
+  "platforms": {
+    "darwin":  { "download_url": "https://github.com/OWNER/REPO/releases/download/v0.0.0/SentisticFlow-0.0.0.dmg",            "sha256": "" },
+    "windows": { "download_url": "https://github.com/OWNER/REPO/releases/download/v0.0.0/SentisticFlowSetup-0.0.0.exe",      "sha256": "" },
+    "linux":   { "download_url": "https://github.com/OWNER/REPO/releases/download/v0.0.0/SentisticFlow-0.0.0-linux.AppImage", "sha256": "" }
+  }
+}
