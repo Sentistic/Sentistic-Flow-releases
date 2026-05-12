@@ -77,6 +77,11 @@ available, the app shows a non-modal dialog with a download link and a
 release-notes link. The app never installs updates automatically — you
 stay in control.
 
+**Your settings are preserved across upgrades.** Updates only replace
+the application binary. Everything stored in your per-user data folder
+(`viewer.toml`, `shadow_states.json`, area-online configs, sensor
+settings, logs) is untouched. See *Where do my settings live?* below.
+
 You can disable the startup check by editing `viewer.toml`:
 
 ```toml
@@ -130,11 +135,31 @@ are tracked and will be addressed in future releases:
 
 | Limitation | Workaround | Tracked for |
 |---|---|---|
-| **macOS Bluetooth (BLE) provisioning may be silently denied** on macOS 12+ for unsigned apps | Use the Wi-Fi onboarding fallback in the BLE Provisioning dialog, or sign+notarise locally if you have an Apple Developer ID | v1.0 (paid signing) |
+| **macOS Bluetooth (BLE) provisioning may be silently denied** on macOS 12+ for unsigned apps | Grant Bluetooth permission to *Sentistic Flow* under System Settings → Privacy & Security → Bluetooth, or provision sensors from a Windows / Linux machine on the same LAN as a one-time setup | v1.0 (paid signing) |
 | **Windows SmartScreen** flags the installer as "unrecognised app" | Click *More info* → *Run anyway* | v1.0 (EV cert) |
-| **Linux** does not auto-open firewall ports | Run `sudo ufw allow 9000:9002/udp` once if you use UFW | Documented |
+| **Linux** does not auto-open firewall ports | Run the bundled `setup_linux_firewall.sh` (auto-detects ufw / firewalld) | Documented |
 | **Auto-updater** notifies and links to the download page; it does **not** auto-install | Click the link, install manually, restart the app | v1.x |
 | **AWS IoT certificates** are not bundled (security) | Drop your `certs/` folder next to the app/installer; see *Where do certs go?* below | By design |
+
+---
+
+## Where do my settings live?
+
+Per-user state — `viewer.toml`, `shadow_states.json`, area-online
+configs, logs — lives **outside** the install folder, in the standard
+per-user data directory for each OS:
+
+| OS | Settings folder | Logs folder |
+|---|---|---|
+| Windows | `%LOCALAPPDATA%\Sentistic Flow\` | `%LOCALAPPDATA%\Sentistic Flow\Logs\` |
+| macOS | `~/Library/Application Support/Sentistic Flow/` | `~/Library/Logs/Sentistic Flow/` |
+| Linux | `~/.config/sentistic-flow/` and `~/.local/share/sentistic-flow/` | `~/.local/state/sentistic-flow/logs/` |
+
+Open them quickly from inside the app:
+**Help → Open Data Folder** / **Help → Open Logs Folder**.
+
+This is why upgrades and reinstalls never wipe your configuration —
+the installer (or new `.app` / `.AppImage`) only touches the binary.
 
 ---
 
