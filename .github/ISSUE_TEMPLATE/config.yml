@@ -1,0 +1,8 @@
+blank_issues_enabled: false
+contact_links:
+  - name: Sentistic Support
+    url: mailto:support@sentistic.com
+    about: For commercial / hardware support, please email us directly.
+  - name: Sentistic website
+    url: https://sentistic.com
+    about: Learn more about Sentistic OMNI sensors and the Flow platform.
