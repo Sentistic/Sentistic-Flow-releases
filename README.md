@@ -123,6 +123,37 @@ Code-signing certificates and Apple notarisation are on the roadmap.
 
 ---
 
+## Known limitations of the v0.9.x beta
+
+We're shipping early so you can start using it. The following items
+are tracked and will be addressed in future releases:
+
+| Limitation | Workaround | Tracked for |
+|---|---|---|
+| **macOS Bluetooth (BLE) provisioning may be silently denied** on macOS 12+ for unsigned apps | Use the Wi-Fi onboarding fallback in the BLE Provisioning dialog, or sign+notarise locally if you have an Apple Developer ID | v1.0 (paid signing) |
+| **Windows SmartScreen** flags the installer as "unrecognised app" | Click *More info* → *Run anyway* | v1.0 (EV cert) |
+| **Linux** does not auto-open firewall ports | Run `sudo ufw allow 9000:9002/udp` once if you use UFW | Documented |
+| **Auto-updater** notifies and links to the download page; it does **not** auto-install | Click the link, install manually, restart the app | v1.x |
+| **AWS IoT certificates** are not bundled (security) | Drop your `certs/` folder next to the app/installer; see *Where do certs go?* below | By design |
+
+---
+
+## Where do certs go?
+
+For **Area Online** (cloud) mode, place your `certs/` folder **next to
+the executable**:
+
+| OS | Path |
+|---|---|
+| Windows (installer) | `C:\Program Files\Sentistic Flow\certs\` |
+| Windows (portable zip) | next to `SentisticFlow.exe` |
+| macOS | next to `SentisticFlow.app` (NOT inside the app — macOS will discard it on update) |
+| Linux | next to the `.AppImage` |
+
+**Local mode** (UDP-only) works without any certs.
+
+---
+
 ## Troubleshooting
 
 | Symptom | Fix |
@@ -143,7 +174,10 @@ Please file bug reports against this repository's
 - App version (Help → About)
 - Operating system and version
 - A description of what you did, what you expected, and what happened
-- The log file (`sentistic-flow.log`, alongside the executable)
+- The log file — find it via **Help → Open Logs Folder** in the app:
+  - Windows: `%LOCALAPPDATA%\Sentistic Flow\Logs\sentistic-flow.log`
+  - macOS: `~/Library/Logs/Sentistic Flow/sentistic-flow.log`
+  - Linux: `~/.local/state/sentistic-flow/logs/sentistic-flow.log`
 
 ---
 
