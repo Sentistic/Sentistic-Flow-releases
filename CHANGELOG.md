@@ -8,6 +8,24 @@ and this project adheres to [Semantic Versioning](https://semver.org/).
 
 ## [Unreleased]
 
+## [0.9.2] — 2026-05-15
+
+### Added
+- Settings dialog: Auto-range checkbox plus Min/Max heatmap range
+  controls (persisted to `viewer.toml`).
+- Mode-controls strip auto-resizes when switching between Local /
+  Demo Online / Area Online so unused mode pages no longer reserve
+  space.
+
+### Changed
+- AWS region + connection details moved to a gitignored
+  `aws_regions.toml` overlay (no secrets in source tree).
+- Windows installer renamed to `SentisticFlow-<v>-windows-setup.exe`;
+  portable zip dropped from the release matrix.
+- Windows `.ico` regenerated straight from `logo.png` (no dark
+  rounded background).
+- `user_data/` split into `areas/`, `cache/`, `logs/` subfolders.
+
 ## [0.9.0] — TBD
 
 First public beta.
