@@ -1,22 +1,98 @@
-# Sentistic Flow
+# Sentistic Software Releases
 
-Real-time multi-sensor floorplan viewer for Sentistic OMNI radar/lidar devices.
-
-This repository hosts **public release downloads only**. The application
-source code is maintained privately by Sentistic.
+Public release downloads for all Sentistic desktop applications.
 
 ---
 
-## Download
+## Products
 
-Grab the latest installer for your operating system from the
-**[Releases page](../../releases/latest)**.
+| Product | Latest release | Updater manifest |
+|---|---|---|
+| **Sentistic Flow** | [Releases → `flow-v*`](../../releases?q=flow-v) | [`dist/flow/version.json`](dist/flow/version.json) |
+| **Sentistic Planner** | [Releases → `planner-v*`](../../releases?q=planner-v) | [`dist/planner/version.json`](dist/planner/version.json) |
+
+---
+
+## Sentistic Flow
+
+Real-time multi-sensor floorplan viewer for Sentistic OMNI radar/lidar devices.
+
+### Download
+
+Grab the latest installer from the **[Releases page → flow-v\* tags](../../releases?q=flow-v)**.
 
 | Platform | Recommended download | Alternative |
 |---|---|---|
-| **Windows 10/11 (x64)** | `SentisticFlowSetup-<version>.exe` (installer) | `SentisticFlow-<version>-windows.zip` (portable) |
-| **macOS 12+ (Apple Silicon & Intel)** | `SentisticFlow-<version>.dmg` | `SentisticFlow-<version>-macos.zip` |
+| **Windows 10/11 (x64)** | `SentisticFlow-<version>-windows-setup.exe` (installer) | `SentisticFlow-<version>-windows.zip` (portable) |
+| **macOS 12+ (Apple Silicon & Intel)** | `SentisticFlow-<version>-macos.dmg` | `SentisticFlow-<version>-macos.zip` |
 | **Linux (x86_64)** | `SentisticFlow-<version>-linux.AppImage` | `SentisticFlow-<version>-linux.zip` |
+
+### Auto-update manifest
+
+The in-app updater fetches:
+```
+https://raw.githubusercontent.com/Sentistic/Sentistic-Flow-releases/main/dist/flow/version.json
+```
+
+---
+
+## Sentistic Planner
+
+DWG/DXF-driven sensor & luminaire installation planner.
+
+Import a CAD floor plan, place Sentistic sensors, validate coverage, and export annotated DXF, CSVs, and a PDF installation guide.
+
+### Download
+
+Grab the latest installer from the **[Releases page → planner-v\* tags](../../releases?q=planner-v)**.
+
+| Platform | Recommended download | Alternative |
+|---|---|---|
+| **Windows 10/11 (x64)** | `SentisticPlannerSetup-<version>.exe` (installer) | `SentisticPlanner-<version>-windows.zip` (portable) |
+| **macOS 12+ (Apple Silicon)** | `SentisticPlanner-<version>.dmg` | `SentisticPlanner-<version>-macos.zip` |
+| **Linux (x86_64)** | — | `SentisticPlanner-<version>-linux.zip` |
+
+### Auto-update manifest
+
+```
+https://raw.githubusercontent.com/Sentistic/Sentistic-Flow-releases/main/dist/planner/version.json
+```
+
+---
+
+## Verify a download
+
+Every release includes a `SHA256SUMS-*.txt` file. To verify:
+
+```bash
+# macOS / Linux
+sha256sum --check SHA256SUMS-*.txt
+
+# Windows (PowerShell)
+Get-FileHash SentisticFlowSetup-*.exe -Algorithm SHA256
+```
+
+---
+
+## Where do my settings live?
+
+**Sentistic Flow** stores per-user configuration outside the install directory so upgrades never overwrite your settings:
+
+| Platform | Path |
+|---|---|
+| Windows | `%LOCALAPPDATA%\Sentistic\SentisticFlow\` |
+| macOS | `~/Library/Application Support/Sentistic/SentisticFlow/` |
+| Linux | `~/.local/share/Sentistic/SentisticFlow/` |
+
+**Sentistic Planner** stores plan files and outputs in the `runs/` and `outputs/` folders next to the plan DXF, and user config in a similar per-user path.
+
+---
+
+## Issues & support
+
+- Bug reports: use the [Issue Tracker](../../issues)
+- Contact: info@sentistic.com
+
 
 Every release also publishes a [`version.json`](../../releases/latest/download/version.json)
 manifest that the in-app updater consumes to notify you when a new build
