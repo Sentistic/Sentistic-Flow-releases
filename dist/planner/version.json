@@ -1,0 +1,22 @@
+{
+  "schemaVersion": 1,
+  "latest": "0.1.0",
+  "releaseDate": "2026-06-22",
+  "minSupported": "0.1.0",
+  "channel": "stable",
+  "notesUrl": "https://github.com/Sentistic/Sentistic-Flow-releases/releases/tag/planner-v0.1.0",
+  "downloads": {
+    "windows": {
+      "installer": {
+        "url": "https://github.com/Sentistic/Sentistic-Flow-releases/releases/download/planner-v0.1.0/SentisticPlannerSetup-0.1.0.exe",
+        "sha256": "a0477c88c0040d799299a7a1d18858b51d536d35bb7bf5fb3982c3a3753b438e"
+      }
+    },
+    "darwin": {
+      "dmg": {
+        "url": "https://github.com/Sentistic/Sentistic-Flow-releases/releases/download/planner-v0.1.0/SentisticPlanner-0.1.0.dmg",
+        "sha256": "6bdcf0176abf26d10ef3a6f7cbc3301b057e2b9759e8c5c802aa7ea47a71df01"
+      }
+    }
+  }
+}
