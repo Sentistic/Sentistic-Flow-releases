@@ -8,11 +8,42 @@ and this project adheres to [Semantic Versioning](https://semver.org/).
 
 ## [Unreleased]
 
-## [0.11.0] — 2026-06-22
+## [0.11.0] — 2026-06-24
 
-## [0.11.0] — 2026-06-22
+### Changed
+- **User-data layout — single canonical root, dev + installed.** All
+  per-user files now live under one root (`%LOCALAPPDATA%\Sentistic Flow\`
+  on Windows, `~/Library/Application Support/Sentistic Flow/` on macOS,
+  `$XDG_DATA_HOME/sentistic-flow/` on Linux; `<repo>/user_data/` when
+  run from source). Same subfolder layout everywhere: `viewer.toml` +
+  `aws_regions.toml` + `cognito_presets.toml` at the root, plus
+  `certs/`, `areas/`, `cache/`, `recordings/`, `Logs/`.
+- AWS credential metadata and HTTPS-presence metadata (non-secret;
+  region + masked hint only — secrets stay in the OS keyring) now live
+  in the data root instead of a split per-OS folder. Old files are
+  migrated automatically on first launch; nothing is overwritten.
+- Auto-written `README.txt` at the data root explains the layout in
+  plain English so operators can find and edit files without help.
+- Log folder is now consistent: dev mode lands in `<repo>/user_data/Logs/`
+  (was `logs/`), frozen builds still use the OS-native log location.
 
-## [0.10.0] — 2026-06-22
+### Added
+- `Help → Show File Locations…` menu item — pops up every path the
+  app reads or writes, with `[x]` / `[ ]` existence tags. Handy for
+  support tickets.
+- `--show-paths` CLI flag — prints the same dump and exits. Useful for
+  CI / scripting.
+- Single `resolve_viewer_config_path()` helper centralising
+  `--config` / `RTV_CONFIG_FILE` / exe-dir / per-user precedence.
+
+### Fixed
+- Existing installs upgrade cleanly: flat-layout files
+  (`area_online_config.json`, `shadow_states.json`, `plot_source.json`)
+  are moved into the new subfolders on first launch without losing
+  data. No reinstall or manual file shuffling needed.
+- AWS credentials and HTTPS-presence vaults no longer get split across
+  two different folders depending on whether the app was launched from
+  source or installed.
 
 ## [0.10.0] — 2026-06-22
 
