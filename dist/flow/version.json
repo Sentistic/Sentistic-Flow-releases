@@ -9,13 +9,13 @@
     "windows": {
       "installer": {
         "url": "https://github.com/Sentistic/Sentistic-Flow-releases/releases/download/flow-v0.11.0/SentisticFlow-0.11.0-windows-setup.exe",
-        "sha256": "9bd563dd9116bc39c414f6d8a0c417594e325cf976ab1bbb2d66d9dd5266010a"
+        "sha256": "cdc4fdd035ba0efd9c82e2a1f9cc75d0269261bc22ce5681ef86a932ba04487b"
       }
     },
     "darwin": {
       "dmg": {
         "url": "https://github.com/Sentistic/Sentistic-Flow-releases/releases/download/flow-v0.11.0/SentisticFlow-0.11.0-macos.dmg",
-        "sha256": "a6fb55a6078487beb1d4bfeef4cf5f4850175593a0cb3417dbc86121a841d5cb"
+        "sha256": "248061ad75cda89f487159537ae7e947f88d1df587c825aab798d1b0fd9d3fd0"
       }
     }
   }
