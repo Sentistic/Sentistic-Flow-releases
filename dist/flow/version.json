@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "latest": "0.11.0",
-  "releaseDate": "2026-06-22",
+  "releaseDate": "2026-06-24",
   "minSupported": "0.9.0",
   "channel": "stable",
   "notesUrl": "https://github.com/Sentistic/Sentistic-Flow-releases/releases/tag/flow-v0.11.0",
@@ -9,13 +9,13 @@
     "windows": {
       "installer": {
         "url": "https://github.com/Sentistic/Sentistic-Flow-releases/releases/download/flow-v0.11.0/SentisticFlow-0.11.0-windows-setup.exe",
-        "sha256": "4e8de9975aadf19bf7a340385c6b97ee11f44680d723300ce4156c27ab9e7ff1"
+        "sha256": "9bd563dd9116bc39c414f6d8a0c417594e325cf976ab1bbb2d66d9dd5266010a"
       }
     },
     "darwin": {
       "dmg": {
         "url": "https://github.com/Sentistic/Sentistic-Flow-releases/releases/download/flow-v0.11.0/SentisticFlow-0.11.0-macos.dmg",
-        "sha256": "7af334e5ee7abe59ff2c20e0d2b71b9b0611bd21891de1088df4ef734ae3d09d"
+        "sha256": "a6fb55a6078487beb1d4bfeef4cf5f4850175593a0cb3417dbc86121a841d5cb"
       }
     }
   }
