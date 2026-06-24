@@ -9,13 +9,13 @@
     "windows": {
       "installer": {
         "url": "https://github.com/Sentistic/Sentistic-Flow-releases/releases/download/planner-v0.1.1/SentisticPlannerSetup-0.1.1.exe",
-        "sha256": "43babe9e2a558fda97a128d2da020e28e4120771d668311a5757cb15a58cf58a"
+        "sha256": "d73a3e2ef16024fffd52a3829abf745e32131fa5e4dcb540aea2f88d2079610a"
       }
     },
     "darwin": {
       "dmg": {
         "url": "https://github.com/Sentistic/Sentistic-Flow-releases/releases/download/planner-v0.1.1/SentisticPlanner-0.1.1.dmg",
-        "sha256": "79746ef60200d7b56a094bed36ffb1ea0060fc9fe3e97663202cf1500bda0f33"
+        "sha256": "18adbf6a65efd062c47d06658e6fc0fbae8b7dec9336f7a85c1b026b6bd88273"
       }
     }
   }
