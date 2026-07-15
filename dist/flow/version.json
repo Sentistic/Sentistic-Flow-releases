@@ -1,21 +1,21 @@
 {
   "schemaVersion": 1,
-  "latest": "0.14.0",
+  "latest": "0.14.1",
   "releaseDate": "2026-07-15",
   "minSupported": "0.9.0",
   "channel": "stable",
-  "notesUrl": "https://github.com/Sentistic/Sentistic-Flow-releases/releases/tag/flow-v0.14.0",
+  "notesUrl": "https://github.com/Sentistic/Sentistic-Flow-releases/releases/tag/flow-v0.14.1",
   "downloads": {
     "windows": {
       "installer": {
-        "url": "https://github.com/Sentistic/Sentistic-Flow-releases/releases/download/flow-v0.14.0/SentisticFlow-0.14.0-windows-setup.exe",
-        "sha256": "a8db1b0db61b2fae6caff93b52298691a087da6d8f28058587eeb9cae9c9a617"
+        "url": "https://github.com/Sentistic/Sentistic-Flow-releases/releases/download/flow-v0.14.1/SentisticFlow-0.14.1-windows-setup.exe",
+        "sha256": "c656db1ff5a116bab56cd29fc8e9792c1e1c593ae6050c125c85e25631f8dd63"
       }
     },
     "darwin": {
       "dmg": {
-        "url": "https://github.com/Sentistic/Sentistic-Flow-releases/releases/download/flow-v0.14.0/SentisticFlow-0.14.0-macos.dmg",
-        "sha256": "5ce9d2b8b01a0744ca349f08f9afee7e7e47b24195a4318a05b525e03d38033c"
+        "url": "https://github.com/Sentistic/Sentistic-Flow-releases/releases/download/flow-v0.14.1/SentisticFlow-0.14.1-macos.dmg",
+        "sha256": "47d4cf86c8c761bab89f104a177b46f5c691a22702d40096c971fe37ce67d5d5"
       }
     }
   }
