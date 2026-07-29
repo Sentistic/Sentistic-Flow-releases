@@ -8,6 +8,41 @@ and this project adheres to [Semantic Versioning](https://semver.org/).
 
 ## [Unreleased]
 
+
+## [0.15.1] — 2026-07-29
+
+### Added
+- Month-scale cloud recording cache: faster local scan, cache tree + safe delete, 64-bit download progress/ETA.
+- Unified TimeRangePicker shared by Open Recording and Analytics.
+- `feature_visibility.json` for selective unlock of developer features on customer PCs.
+- Central `safe_delete` guards for all user-data wipes.
+
+### Changed
+- Export / `push_detections`: hour-streamed ingest→stage→upload, per-hour S3 skip, promote to `mirror-detections` before clearing staging (no re-download for analytics).
+- Analytics integrity/polish (time-of-day, underused sub-areas, chart UX, Inter fonts).
+
+### Fixed
+- Export overall progress bar for multi-chunk month jobs; area config default no longer picks the first sibling JSON.
+- Staging leftovers no longer fill the disk after upload (`Errno 28`).
+
+
+## [0.15.0] — 2026-07-27
+
+### Added
+- **Analytics dashboard** in Area Online — DuckDB-backed historical KPIs,
+  charts, heatmaps, compare mode, and PNG export over cached detections.
+- Multi-region Cognito login routing and known-environment discovery.
+- Admin **Publish current area to cloud** plus local area-config save.
+- Fleet health HUD and status-metrics charts on the Sensors tab.
+
+### Fixed
+- Cloud recording playback scrubber no longer pads empty leading hours
+  from a wide probe window (e.g. Last 12 h with data only in the last 4 h).
+- Large analytics refreshes stream multi-day ranges instead of loading
+  every detection row into RAM (Walmart-scale crash path).
+- Release `version.json` is attached as a GitHub Release asset so the
+  in-app updater can resolve `…/releases/latest/download/version.json`.
+
 ## [0.14.2] — 2026-07-15
 
 ## [0.14.1] — 2026-07-15
