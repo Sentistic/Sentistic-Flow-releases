@@ -8,6 +8,18 @@ and this project adheres to [Semantic Versioning](https://semver.org/).
 
 ## [Unreleased]
 
+## [0.15.5] — 2026-07-30
+
+### Added
+- Video (MP4) export: heatmap style and colour-map controls (same set as Heatmap PNG).
+- Frozen builds: `--rtv-child` dispatch so packaged apps can run render / JSON / push CLIs without loose `.py` scripts.
+
+### Fixed
+- Export Traffic / Dwell now use the same density classifier as live Area Online (Traffic no longer matches Occupancy on dense sites).
+- Cloud-area video / PNG export restores floorplan when only `floorplan.png` (or a materialised copy) is present.
+- STATUS hover cards: case-insensitive thing lookup; recover STATUS wildcard after MQTT interrupt (no more stuck “Waiting…”).
+- Escape no longer quits the main window (still cancels canvas modes / closes popups).
+
 ## [0.15.4] — 2026-07-30
 
 
