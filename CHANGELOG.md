@@ -10,6 +10,16 @@ and this project adheres to [Semantic Versioning](https://semver.org/).
 
 ## [0.15.7] — 2026-08-20
 
+### Added
+- Pulse / SLI local demo mode: Flow now opens UDP shadow with `localModeEnable` and `shadowUdpEnable` so play/stop and the 9000 stream work on Pulse firmware `30aeaa62+`.
+- USB Flash Firmware: OMNI defaults (esp32 / dio / 80m / 8MB / Force). Encrypted UART reflash is Tools → Flash Encrypted, not on the basic Flash page.
+
+### Fixed
+- Local demo wake/play on dual-NIC Windows binds the command socket to the device subnet.
+- USB “Erase entire flash” uses `write-flash --erase-all` in the same esptool session so `--force` applies (a separate `erase-flash` was refused on encrypted chips).
+- Cloud S3 / Dynamo permission denials show a useful hint instead of empty-area silence.
+- Analytics space heatmap SQL covers every sensor and hour; playback All-loaded heatmaps stay complete at MAX speed.
+
 ## [0.15.5] — 2026-07-30
 
 ### Added
