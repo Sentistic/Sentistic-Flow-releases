@@ -8,6 +8,17 @@ and this project adheres to [Semantic Versioning](https://semver.org/).
 
 ## [Unreleased]
 
+### Added
+- Heatmap Window: **All loaded** (every session sample) and **All loaded · thinned** (whole session, older samples sparsified so long soaks stay usable).
+- Cognito invitation and verification email HTML (`docs/cognito-emails/`).
+- Installer ships `logo.png` / `SentisticFlow.ico` for Start Menu and desktop shortcuts.
+
+### Fixed
+- Area Online on ~230 sensors no longer slows the whole laptop until Flow is quit (bounded replay/ingest queues, coalesced live MQTT, no GUI-thread drain busy-loop).
+- Local Start/Stop only unicasts to the target sensor (no LAN-wide broadcast).
+- Pulse Presence / PIR / linger plots no longer vanish when axes auto-range to milliseconds.
+- Launch always opens Cloud Login; guest is a distinct session from cancelling a mid-session login.
+
 ## [0.15.7] — 2026-08-20
 
 ### Added
