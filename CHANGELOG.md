@@ -8,6 +8,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/).
 
 ## [Unreleased]
 
+## [0.15.8] — 2026-08-21
+
 ### Added
 - Heatmap Window: **All loaded** (every session sample) and **All loaded · thinned** (whole session, older samples sparsified so long soaks stay usable).
 - Cognito invitation and verification email HTML (`docs/cognito-emails/`).
