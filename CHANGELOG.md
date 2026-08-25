@@ -8,6 +8,15 @@ and this project adheres to [Semantic Versioning](https://semver.org/).
 
 ## [Unreleased]
 
+## [0.16.0] — 2026-08-25
+
+### Added
+- Area Online lighting simulation: occupancy-driven dimming overlay (absence/presence dim, fade times) and an **Area dim** HUD showing usage versus always-on, measured over sensor FOVs only.
+- Developer Promo Studio tab in Export for storyboard preview/render (hidden in customer builds).
+
+### Fixed
+- Corporate Windows PCs no longer freeze on launch or wake: Flow no longer shells out to PowerShell or `ipconfig` (AppLocker block dialogs). Dual-NIC addresses come from the IP Helper API; the firewall probe runs off the UI thread.
+
 ## [0.15.8] — 2026-08-21
 
 ### Added
