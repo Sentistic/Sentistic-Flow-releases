@@ -8,6 +8,16 @@ and this project adheres to [Semantic Versioning](https://semver.org/).
 
 ## [Unreleased]
 
+## [0.17.0] — 2026-08-26
+
+### Added
+- Analytics **Area Dim Profile** and **Dim Savings** KPIs: typical dim on occupied hours, average dim, and potential lighting energy savings versus always-on at presence dim.
+- Observed **walkable circulation mask** for Occupied Area, Utilization, and Dead Zones (sensor FOV ∩ historically walked routes, not the whole floorplan).
+- Lighting overlay defaults for a ~10 m occupancy group (10 m radius, 50% absence dim, 60 s hold-off).
+
+### Fixed
+- Large-area Analytics refresh no longer OOMs DuckDB on occupancy KPIs; heatmap, dwell, and routes stay usable on multi-day ranges.
+
 ## [0.16.0] — 2026-08-25
 
 ### Added
