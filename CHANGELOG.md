@@ -8,6 +8,17 @@ and this project adheres to [Semantic Versioning](https://semver.org/).
 
 ## [Unreleased]
 
+### Added
+- Analytics **Average Dim** heatmap: time-averaged lighting level per cell (same occupancy discs as the live overlay).
+- Analytics occupancy / traffic / dwell / hotspot maps use Inferno and the live 0.20 m grid; heatmaps pack two per row.
+
+### Changed
+- Analytics From/To, chart axes, Time-of-Day, and Open Recording clocks follow the selected area's IANA timezone (same as the live canvas), not the PC clock or UTC.
+- Analytics heatmaps keep 0.5 m cells instead of averaging a whole sensor FOV, so month chips follow aisles instead of lighting a blob under each mount.
+- Occupancy / traffic / dwell classification uses the Analytics sample bin so dwell is not empty and traffic is not a copy of occupancy.
+- Dead Zones rank the quietest walkable cells (amber) against busy aisles.
+- Average Dim paint contrast-stretches observed dim so standby vs busy lighting is readable; hover stays absolute dim %.
+
 ## [0.17.0] — 2026-08-26
 
 ### Added
