@@ -8,6 +8,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/).
 
 ## [Unreleased]
 
+## [0.18.0] — 2026-08-28
+
 ### Added
 - Analytics **Average Dim** heatmap: time-averaged lighting level per cell (same occupancy discs as the live overlay).
 - Analytics occupancy / traffic / dwell / hotspot maps use Inferno and the live 0.20 m grid; heatmaps pack two per row.
