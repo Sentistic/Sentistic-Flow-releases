@@ -1,21 +1,33 @@
 {
   "schemaVersion": 1,
-  "latest": "0.2.1",
-  "releaseDate": "2026-09-22",
+  "latest": "0.2.2",
+  "releaseDate": "2026-09-24",
   "minSupported": "0.1.0",
   "channel": "stable",
-  "notesUrl": "https://github.com/Sentistic/Sentistic-Flow-releases/releases/tag/planner-v0.2.1",
+  "notesUrl": "https://github.com/Sentistic/Sentistic-Flow-releases/releases/tag/planner-v0.2.2",
   "downloads": {
     "windows": {
       "installer": {
-        "url": "https://github.com/Sentistic/Sentistic-Flow-releases/releases/download/planner-v0.2.1/SentisticPlannerSetup-0.2.1.exe",
-        "sha256": "db04b248a4d5c22fa358c1fdf8d5a59f44321baa22a1ce4afdf764dbc12103e9"
+        "url": "https://github.com/Sentistic/Sentistic-Flow-releases/releases/download/planner-v0.2.2/SentisticPlannerSetup-0.2.2.exe",
+        "sha256": "8042b12c0ae36198a482e1e81eb4b46fe1012a2b8937308443ea4d7fe8223864"
       }
     },
     "darwin": {
       "dmg": {
-        "url": "https://github.com/Sentistic/Sentistic-Flow-releases/releases/download/planner-v0.2.1/SentisticPlanner-0.2.1.dmg",
-        "sha256": "556716262c29c2e41ae326edb1d72c75e8ae670bd4834ab77d3532d3c3672b8a"
+        "url": "https://github.com/Sentistic/Sentistic-Flow-releases/releases/download/planner-v0.2.2/SentisticPlanner-0.2.2-macos-arm64.dmg",
+        "sha256": "8753417c360411516f9b9e14a30ee759f0276b677e0bfa82b576b6f0f63a34dc",
+        "arch": "arm64"
+      },
+      "dmgIntel": {
+        "url": "https://github.com/Sentistic/Sentistic-Flow-releases/releases/download/planner-v0.2.2/SentisticPlanner-0.2.2-macos-intel.dmg",
+        "sha256": "da053389f0cda1882cf51efd8d56c38b04ce9c1e3f12805feabb72eb20fa3164",
+        "arch": "x86_64"
+      }
+    },
+    "linux": {
+      "tarball": {
+        "url": "https://github.com/Sentistic/Sentistic-Flow-releases/releases/download/planner-v0.2.2/SentisticPlanner-0.2.2-linux-x64.tar.gz",
+        "sha256": "430b248407e3f987c48b36232e53dfe0c546bdb5fc468a7b21f5481433425584"
       }
     }
   }
