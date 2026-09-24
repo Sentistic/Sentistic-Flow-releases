@@ -1,33 +1,33 @@
 {
   "schemaVersion": 1,
-  "latest": "0.2.4",
+  "latest": "0.2.5",
   "releaseDate": "2026-09-24",
   "minSupported": "0.1.0",
   "channel": "stable",
-  "notesUrl": "https://github.com/Sentistic/Sentistic-Flow-releases/releases/tag/planner-v0.2.4",
+  "notesUrl": "https://github.com/Sentistic/Sentistic-Flow-releases/releases/tag/planner-v0.2.5",
   "downloads": {
     "windows": {
       "installer": {
-        "url": "https://github.com/Sentistic/Sentistic-Flow-releases/releases/download/planner-v0.2.4/SentisticPlannerSetup-0.2.4.exe",
-        "sha256": "3060b320542cc64fffc89854ac1567d61fbeef26d646463d80796fc9748604a5"
+        "url": "https://github.com/Sentistic/Sentistic-Flow-releases/releases/download/planner-v0.2.5/SentisticPlannerSetup-0.2.5.exe",
+        "sha256": "76f4efc0626c5a48deaa3355440bf276ab5e4b2509a25d956c2d0effa85d1088"
       }
     },
     "darwin": {
       "dmg": {
-        "url": "https://github.com/Sentistic/Sentistic-Flow-releases/releases/download/planner-v0.2.4/SentisticPlanner-0.2.4-macos-arm64.dmg",
-        "sha256": "04dd22fdfed2e3e5229e680518b93cc0e918dba4575577cc0a386ffdbab56faa",
+        "url": "https://github.com/Sentistic/Sentistic-Flow-releases/releases/download/planner-v0.2.5/SentisticPlanner-0.2.5-macos-arm64.dmg",
+        "sha256": "7430e56c4381961626422ce194576042ba2a678693a025685f5b0fd96d781f88",
         "arch": "arm64"
       },
       "dmgIntel": {
-        "url": "https://github.com/Sentistic/Sentistic-Flow-releases/releases/download/planner-v0.2.4/SentisticPlanner-0.2.4-macos-intel.dmg",
-        "sha256": "c831d5c451ac2b3473d9c11a40924c51cf7897f2e85cba798fcf72da16b5a09f",
+        "url": "https://github.com/Sentistic/Sentistic-Flow-releases/releases/download/planner-v0.2.5/SentisticPlanner-0.2.5-macos-intel.dmg",
+        "sha256": "34287b2b03a4657b3ef034eea9b0ed0d93c1b1eb7c61bd794aada7c7c3e15d28",
         "arch": "x86_64"
       }
     },
     "linux": {
       "tarball": {
-        "url": "https://github.com/Sentistic/Sentistic-Flow-releases/releases/download/planner-v0.2.4/SentisticPlanner-0.2.4-linux-x64.tar.gz",
-        "sha256": "e3732b146323a701c9fabc5eb1da296636baee20796456ca29aec96ec3f90210"
+        "url": "https://github.com/Sentistic/Sentistic-Flow-releases/releases/download/planner-v0.2.5/SentisticPlanner-0.2.5-linux-x64.tar.gz",
+        "sha256": "f9d08da3b4486ad7734aa3fc03b7599b3470e0e9d85e070d8af0bf45d5cb0eb3"
       }
     }
   }
